@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Queens-Game</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+  <script src="js/main.js" type="module"></script>
+</head>
+<body>
+  <main>
+    <header>Juego de las Reinas</header>
+    <section id="board"></section>
+    <section class="info-board">
+      <div class="time">
+        <span>⏱️ Tiempo:</span>
+        <span id="timer">00:00</span>
+      </div>
+      <div class="actions">
+        <button id="clear">Limpiar Juego</button>
+        <button id="reset">Resetear Juego</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <h4>Como se juega</h4>
+    <ol>
+      <li>Tu objetivo es tener exactamente una 👑 en cada fila, columna y color de región.</li>
+      <li>Presiona una vez para colocar una × y presionar de nuevo para colocar una 👑. Usa las × para marcar donde no se pueda colocar una 👑.</li>
+      <li>Dos 👑 no pueden tocarse, ni siquera en diagonal.
+  </footer>
+
+  <dialog class="levels">
+    <p>Selecciona el modo de juego</p>
+    <form method="dialog">
+      <button class="easy">Fácil</button>
+      <button class="medium">Intermedio</button>
+      <button class="hard">Dificil</button>
+    </form>
+  </dialog>
+</body>
+</html>
